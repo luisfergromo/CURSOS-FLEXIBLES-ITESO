@@ -1,0 +1,249 @@
+/*********************************************************************/
+/***** BEGIN DESIGN TOOLS THEME IMPORT & CUSTOMIZATION  **************/
+/*********************************************************************/
+/* Import statements need to be at the top of your CSS file */
+/* For Main CSS file */
+/*@import url(https://designtols.ciditools.com/css/themes.css);*/
+/* For Mobile app CSS file */
+/*@import url(https://designtools.ciditools.com/css/app.css);*/
+/* Institution color customizations */
+/*@import url(https://designtools.ciditools.com/css/inst_theme_overrides.css);*/
+/* Theme Colors */
+:root {
+  --dt-color-primary: #d30606;
+  --dt-color-primary-contrast: #FFFFFF;
+  --dt-color-primary-dark-text: #002F6C;
+  --dt-color-secondary: #75A3CD;
+  --dt-color-secondary-contrast: #000000;
+  --dt-color-secondary-dark-text: #25282A;
+  --dt-color-accent: #AAA59F;
+  --dt-color-accent-contrast: #000000;
+  --dt-color-graybg: #E6E6E6;
+  --dt-color-graybg-contrast: #000000;
+}
+/*********************************************************************/
+/***** END DESIGN TOOLS THEME IMPORT & CUSTOMIZATION   ****************/
+/*********************************************************************/
+
+body.primary-nav-expanded .ic-app-header__logomark {
+  margin: 0 10px;
+}
+
+.ic-app-header {
+  border-right: 1px solid #0d395f;
+}
+
+.ic-app-header__menu-list-item--active {
+  background-color: #0d395f;
+}
+
+/*hide unenrollment link*/
+
+#right-side a.btn.button-sidebar-wide.self_unenrollment_link { 
+  display:none; 
+}
+
+header#app-header {}
+
+
+.container.product-details h2 {
+  color: #0d395f;
+  font-weight: 700;
+
+}
+.container.product-details ul{
+  list-style-type: none!important;
+}
+.container.product-details ul li:before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f19d";
+  text-decoration: inherit;
+  color: #0d395f;
+  font-size: 20px;
+  position: relative;
+  left: -10px;
+  padding: 0px;
+  margin-left: 10px;
+}
+h2.hero-head.h1 {
+  font-size: 60px;
+  color: #0d395f;
+  font-weight: 700;
+  text-align: center;
+}
+
+p.descripcion {
+  padding: 50px 10px;
+  font-size: 21px;
+  text-align: center;
+  background: #BEE5EB;
+  color: #004270;
+}
+/*TEST Adview*/
+
+
+
+h2.hero-head.h1 {
+  color: #004270;
+  font-size: 36px;
+}
+span#add-to-cart-hero {
+  display: none;
+}
+span#bulk-checkout-divider-hero {
+  display: none;
+}
+span#add-to-bulk-checkout-hero {
+  display: none;
+}
+.product-bg {
+  background-color: #fff;
+  background-size: cover;
+}p.descripcion {
+  padding: 50px 10px;
+  font-size: 21px;
+  text-align: center;
+  background: #BEE5EB;
+  color: #004270;
+}
+div#main {
+  background: #F2F5F7;
+}
+.contenido-curso h3 {
+  font-size: 30px;
+  border-bottom: solid #05467d 2px;
+  padding-bottom: 10px;
+}
+.contenido-curso h2 {
+  font-size: 45px;
+  border-bottom: solid #05467d 2px;
+  padding: 10px;
+  text-align: center;
+}
+.contenido-curso h4{
+  font-weight: 700;
+}
+
+.product-account-logo {
+   max-height: 0px; */
+  margin-bottom: initial;
+}
+ul.lista-beneficios {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.lista-beneficios {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: solid #004270 2px;
+  padding: 10px;
+}
+ul.lista-beneficios li:nth-child(1):before,
+ul.lista-beneficios li:nth-child(2):before,
+ul.lista-beneficios li:nth-child(3):before,
+ul.lista-beneficios li:nth-child(4):before,
+ul.lista-beneficios li:nth-child(5):before,
+ul.lista-beneficios li:nth-child(6):before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  text-decoration: inherit;
+  color: #004270;
+  font-size: 20px;
+  position: relative;
+  left: -10px;
+  padding: 0px;
+  margin-left: 10px;
+}
+ul.lista-beneficios li:nth-child(1):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(2):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(3):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(4):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(5):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(6):before{
+  content: "\f00c";
+}
+#search-form.callout-region{
+  background-color: #00457C;
+}
+.search-refine-button__text {
+  color: #fff;
+}
+.btn-link, .btn-link:visited, #listings {
+  color: #004270;
+}
+
+.icon.search-refine-button__icon.icon-circle-down {
+  color: #fff;
+}
+.ProductIcon__LargeCircle--course,
+.ProductIcon__LargeCircle--program{background: #004270;}
+.product-tile .product-heading .product-title{text-align: justify;}
+.product-tile .product-description, .product-tile .product-footer {
+  padding: 10px;
+  border-top: 1px solid #666;
+}
+.product-account-image-wrapper {
+  margin: 10px;
+  height: 60px;
+  max-width: 100%;
+  text-indent: -9999px;
+  display: block;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.product-description{font-size: 14px!important;}
+.product-tile .product-footer{color:#004270;}
+
+
+.bg-amarillo{background: #FDC50A;}
+body{margin-top: 50px!important;}
+.container-fluid.bg-amarillo.cintillo {
+  position: absolute;
+  background: #FDC50A;
+  z-index: 999;
+  height: 50px;
+  top: 0;
+  padding: 10px;
+}
+.container-fluid.bg-amarillo.cintillo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.container-fluid.bg-amarillo.cintillo ul li{
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 0px 10px;
+}
+.container-fluid.bg-amarillo.cintillo ul li a{
+  color: #004270;
+leading-trim: both;
+text-edge: cap;
+font-family: Font Awesome 6 Free;
+font-size: 12px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+.container-fluid.bg-amarillo.cintillo .container{
+  max-width:1100px!important;
+  margin: 0 auto;
+
+}
