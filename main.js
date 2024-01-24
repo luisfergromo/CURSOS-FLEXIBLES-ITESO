@@ -1,1 +1,3 @@
-$('.course-options').append("<div class='demo_luis'>"+"<h1>DEMO</h1>"+"</div>");
+var helpTray = document.getElementById("help_tray");
+var ctx = canvas.getContext('2d');
+ctx.append("<div class='testing'>"+"</div>");
