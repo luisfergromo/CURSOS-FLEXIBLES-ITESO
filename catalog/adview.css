@@ -43,8 +43,15 @@ body.primary-nav-expanded .ic-app-header__logomark {
   display:none; 
 }
 
-header#app-header {}
-
+header#app-header {
+  background-color: #19447b;
+}
+#app-header{padding: 10px;}
+.header-branding h1 {
+  text-align: left;
+  margin: 0;
+  margin-top: 5px;
+}
 
 .container.product-details h2 {
   color: #0d395f;
@@ -53,18 +60,22 @@ header#app-header {}
 }
 .container.product-details ul{
   list-style-type: none!important;
+  padding: 0;
 }
 .container.product-details ul li:before{
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
-  content: "\f19d";
+  content: "\f111";
   text-decoration: inherit;
   color: #0d395f;
-  font-size: 20px;
+  font-size: 7px;
   position: relative;
   left: -10px;
   padding: 0px;
   margin-left: 10px;
+}
+.container.product-details ul li{
+  padding: 5px 0px;
 }
 h2.hero-head.h1 {
   font-size: 60px;
@@ -176,7 +187,7 @@ ul.lista-beneficios li:nth-child(6):before{
   content: "\f00c";
 }
 #search-form.callout-region{
-  background-color: #00457C;
+  background-color: #19447b;
 }
 .search-refine-button__text {
   color: #fff;
@@ -189,36 +200,101 @@ ul.lista-beneficios li:nth-child(6):before{
   color: #fff;
 }
 .ProductIcon__LargeCircle--course,
-.ProductIcon__LargeCircle--program{background: #004270;}
+
 .product-tile .product-heading .product-title{text-align: justify;}
-.product-tile .product-description, .product-tile .product-footer {
-  padding: 10px;
-  border-top: 1px solid #666;
+footer.callout-region h3.h2{display: none;}
+footer.callout-region:before {
+  content: 'Â¡InscrÃ­bete en este curso hoy!';
+  position: relative;
+  background: #f0f0f0;
+  padding: 20px 0px;
+  display: block;
+  margin: 0 auto;
 }
 .product-account-image-wrapper {
-  margin: 10px;
-  height: 60px;
   max-width: 100%;
-  text-indent: -9999px;
-  display: block;
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-color: white;
 }
 .product-description{font-size: 14px!important;}
 .product-tile .product-footer{color:#004270;}
 
+h2.icon-descipcion,
+h3.icon-objetivo,
+h3.icon-perfil,
+h2.icon-contenido,
+h2.icon-profesor{
+  font-family: "Lato", sans-serif!important;
+  }
+h2.icon-descipcion:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/descripcion_fase.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+  left: 0%;
+}
+h3.icon-objetivo:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/objetivo.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+h3.icon-perfil:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/perfil.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+h2.icon-contenido:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/contenido_tematico.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+h2.icon-profesor:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/profesor.png);
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
 
 .bg-amarillo{background: #FDC50A;}
-body{margin-top: 50px!important;}
+
 .container-fluid.bg-amarillo.cintillo {
   position: absolute;
-  background: #FDC50A;
+  background: #19447b ;
   z-index: 999;
   height: 50px;
   top: 0;
   padding: 10px;
+  width: 100%;
 }
 .container-fluid.bg-amarillo.cintillo ul {
   list-style: none;
@@ -233,17 +309,364 @@ body{margin-top: 50px!important;}
   padding: 0px 10px;
 }
 .container-fluid.bg-amarillo.cintillo ul li a{
-  color: #004270;
-leading-trim: both;
-text-edge: cap;
+  color: #fff;
+  text-transform: uppercase;
+
 font-family: Font Awesome 6 Free;
 font-size: 12px;
 font-style: normal;
 font-weight: 900;
 line-height: normal;
 }
+.container-fluid.bg-amarillo.cintillo ul li a {
+  color: #19447b;
+  background: #fdc510;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
 .container-fluid.bg-amarillo.cintillo .container{
   max-width:1100px!important;
   margin: 0 auto;
 
+}
+.container-fluid.bg-azul-footer {
+  background: #004270;
+  padding: 50px 0px;
+  color: #fff;
+}
+.container-fluid.bg-azul-footer h2{
+  font-size: 24px;
+  color: #fff;
+}
+.container-fluid.bg-azul-footer h3{
+  font-size: 17px;
+  color: #fff;
+}
+.tel-footer{
+  font-size: 17px;
+  color: #fff!important;
+  text-decoration: none!important;
+}
+.col-md-12.redes-sociales .redes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 20px 0px;
+}
+.col-md-12.redes-sociales .redes p{color: #fff;}
+.col-md-12.logos-footer ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 20px 0px;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  margin: 0 auto;
+}
+ul.piped-list {
+  display: none;
+}
+footer#app-footer p.small {
+  display: none;
+}
+.product-image .image-container {
+  margin-bottom: 10px;
+  border: solid #004270 2px;
+}
+/* Fichas */
+.product-tile .product-heading {
+  color: #004270;
+  font-family: Lato;
+  font-size: 17px!important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.product-description{
+  color: #666;
+font-family: Lato;
+font-size: 14px!important;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none!important;
+}
+.product-results .product-tile:hover {
+  box-shadow: inset 0px -5px 0px #FDC50A!important;
+}
+a:link{text-decoration: none!important;}
+.redes {
+  max-width: 500px;
+  margin: 0 auto;
+}
+div#description hr {
+  background: #FDC50A;
+  padding-bottom: 5px;
+  border: none;
+  opacity: 1;
+  height: 2px!important;
+}
+div#description h3{
+  color: #004270;
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+/* Slider */
+img {
+  max-width: 100%;
+}
+
+.slider-container {
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  top: 132px; 
+}
+div#search-form {
+  margin-top: 198px;
+}
+.product-dates{display: none;}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.menu label:hover {
+  background: red;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+}
+
+[id^=slide]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+.slide-1 {
+  background-image: url("https://test.adviewhost.com/canvasiteso/images/03.jpg");
+  background-size: cover;
+}
+
+.slide-2 {
+  background-image: url("https://test.adviewhost.com/canvasiteso/images/02.jpg");
+  background-size: cover;
+}
+
+.slide-3 {
+  background-image: url("https://test.adviewhost.com/canvasiteso/images/01.jpg");
+  background-size: cover;
+}
+/* Slider */
+/* Lista interna iconos */
+div#description ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+div#description ol li{
+  font-size: 21px;
+  text-align: center;
+  
+}
+div#description ol li a{
+  color: #0d395f!important;
+  font-weight: 700;
+}
+
+div#description ol li:nth-child(1):before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/duracion.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+div#description ol li:nth-child(2):before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/precio.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+div#description ol li:nth-child(3):before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/fecha.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+.container-fluid.bg-amarillo.cintillo ul li a::before {
+  content: '';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f0ac";
+  text-decoration: inherit;
+  color: #19447b;
+  font-size: 15px;
+  position: relative;
+  left: -10px;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+div#checkout-header {
+  margin-top: 50px!important;
+}
+ul.Product__AssociatedProductsList--above-the-fold {
+  list-style: auto;
+  color: #1473ac;
+}
+input#slide-dot-3, input#slide-dot-2, input#slide-dot-1 {
+  z-index: 999999;
+  position: relative;
+  top: 575px;
+  margin: 0px 10px;
+}
+.main-container{
+  width: 100%;
+  max-width: 1200px;
+  margin:  0 auto;
+}
+.header-container{
+  margin: 0 auto;
+width: 465px;
+height: 190px;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+align-content: center;
+justify-content: center;
+align-items: center;
+justify-items: center;
+}
+img.icono-modalidad{
+  width: 150px;
+ 
+}
+img.titulo-modalidad{
+  width: 460px;
+}
+.body-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.contenido-recurso {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 10px;
+ max-width: 342px;
+}
+.contenido-recurso img{width: 130px; height:130px; display: block; margin:  0 auto;}
+.contenido-recurso h3{
+  font-size: 24px;
+  color:#263d8d;
+  text-align: center;
+  font-weight: 700;
+}
+.contenido-recurso p{
+  font-size: 14px;
+  color:#263d8d;
+  text-align: center;
+ 
+
+}
+.autogestivo{margin-top: 400px;}
+.titulo-azul{
+  color: #3598db!important;
+  font-weight: 700;
+}
+@media(max-width:768px){
+  .body-container{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media(max-width:520px){
+  .body-container{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+  }
+  .header-container{
+      margin: 0 auto;
+      width: 465px;
+      height: 190px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+     
+  }
+}
+
+/* MEDIAS */
+@media(max-width:520px){
+  .slider-container {
+    height: 467px;
+  }
+  input#slide-dot-3, input#slide-dot-2, input#slide-dot-1 {
+    top: 444px;
+  }
+  .container-fluid.bg-amarillo.cintillo ul {
+    text-align: center;
+  }
+  div#description ol{grid-template-columns: repeat(1, 1fr);}
 }
