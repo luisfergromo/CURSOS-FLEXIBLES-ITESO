@@ -17,21 +17,21 @@ iframe.style.right = "20px";
 iframe.style.zIndex = "9999"; // Asegura que estÃ© por encima de otros elementos
 document.body.appendChild(iframe);
 
-// Crear el botÃ³n flotante
+// Crear el botón flotante
 var floatingButton = document.createElement("button");
-floatingButton.innerHTML = "💬"; // Usando un emoji como Ã­cono, puedes cambiarlo por una imagen
+floatingButton.innerHTML = "<img src='https://diplomados.iteso.mx/documents/86112/6015612/BOTON+SOPORTE_PANT_652.png' />"; // Usando un emoji como ícono, puedes cambiarlo por una imagen
 floatingButton.style.position = "fixed";
 floatingButton.style.bottom = "20px"; // Distancia desde la parte inferior de la ventana
 floatingButton.style.right = "20px"; // Distancia desde el lado derecho de la ventana
-floatingButton.style.backgroundColor = "#19447b"; // Color del botÃ³n, puedes cambiarlo
+floatingButton.style.backgroundColor = "#fdc510"; // Color del botón, puedes cambiarlo
 floatingButton.style.color = "white";
-floatingButton.style.border = "none";
+// floatingButton.style.border = "none";
 floatingButton.style.borderRadius = "50%";
 floatingButton.style.width = "60px";
 floatingButton.style.height = "60px";
 floatingButton.style.fontSize = "24px";
 floatingButton.style.cursor = "pointer";
-floatingButton.style.zIndex = "9999"; // Asegura que estÃ© por encima de otros elementos
+floatingButton.style.zIndex = "9999"; // Asegura que esté por encima de otros elementos
 document.body.appendChild(floatingButton);
 
 // Agregar un event listener al botÃ³n para alternar la visibilidad del iframe
