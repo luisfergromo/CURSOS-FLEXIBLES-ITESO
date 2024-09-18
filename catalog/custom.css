@@ -1,6 +1,644 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
-@import url("https://test.adview.mx/canvasiteso/style.css");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
+// @import url("https://test.adviewhost.com/canvasiteso/style.css");
+
+:root {
+  --dt-color-primary: #d30606;
+  --dt-color-primary-contrast: #FFFFFF;
+  --dt-color-primary-dark-text: #002F6C;
+  --dt-color-secondary: #75A3CD;
+  --dt-color-secondary-contrast: #000000;
+  --dt-color-secondary-dark-text: #25282A;
+  --dt-color-accent: #AAA59F;
+  --dt-color-accent-contrast: #000000;
+  --dt-color-graybg: #E6E6E6;
+  --dt-color-graybg-contrast: #000000;
+}
+
+body.primary-nav-expanded .ic-app-header__logomark {
+  margin: 0 10px;
+}
+
+.ic-app-header {
+  border-right: 1px solid #0d395f;
+}
+
+.ic-app-header__menu-list-item--active {
+  background-color: #0d395f;
+}
+.header-menu-container {
+  background-color: #0d395f;
+}
+/*hide unenrollment link*/
+
+#right-side a.btn.button-sidebar-wide.self_unenrollment_link { 
+  display:none; 
+}
+
+header#app-header {
+  background-color: #19447b;
+}
+#app-header{padding: 10px;}
+.header-branding h1 {
+  text-align: left;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.container.product-details h2 {
+  color: #0d395f;
+  font-weight: 700;
+
+}
+.container.product-details ul{
+  list-style-type: none!important;
+  padding: 0;
+}
+.container.product-details ul li:before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f111";
+  text-decoration: inherit;
+  color: #0d395f;
+  font-size: 7px;
+  position: relative;
+  left: -10px;
+  padding: 0px;
+  margin-left: 10px;
+}
+.container.product-details ul li{
+  padding: 5px 0px;
+}
+h2.hero-head.h1 {
+  font-size: 60px;
+  color: #0d395f;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+/*TEST Adview*/
+
+/*
+footer.callout-region:before {
+  content: '¡Inscrí­bete en este curso hoy!';
+  position: relative;
+  background: #f0f0f0;
+  padding: 20px 0px;
+  display: block;
+  margin: 0 auto;
+}
+*/
+
+h2.hero-head.h1 {
+  color: #004270;
+  font-size: 36px;
+}
+span#add-to-cart-hero {
+  display: none;
+}
+span#bulk-checkout-divider-hero {
+  display: none;
+}
+span#add-to-bulk-checkout-hero {
+  display: none;
+}
+.product-bg {
+  background-color: #fff;
+  background-size: cover;
+}p.descripcion {
+  padding: 50px 10px;
+  font-size: 21px;
+  text-align: center;
+  background: #BEE5EB;
+  color: #004270;
+}
+div#main {
+  background: #F2F5F7;
+}
+.contenido-curso h3 {
+  font-size: 30px;
+  border-bottom: solid #05467d 2px;
+  padding-bottom: 10px;
+}
+.contenido-curso h2 {
+  font-size: 45px;
+  border-bottom: solid #05467d 2px;
+  padding: 10px;
+  text-align: center;
+}
+.contenido-curso h4{
+  font-weight: 700;
+}
+
+.product-account-logo {
+   max-height: 0px; 
+  margin-bottom: initial;
+}
+ul.lista-beneficios {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.lista-beneficios {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: solid #004270 2px;
+  padding: 10px;
+}
+ul.lista-beneficios li:nth-child(1):before,
+ul.lista-beneficios li:nth-child(2):before,
+ul.lista-beneficios li:nth-child(3):before,
+ul.lista-beneficios li:nth-child(4):before,
+ul.lista-beneficios li:nth-child(5):before,
+ul.lista-beneficios li:nth-child(6):before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  text-decoration: inherit;
+  color: #004270;
+  font-size: 20px;
+  position: relative;
+  left: -10px;
+  padding: 0px;
+  margin-left: 10px;
+}
+ul.lista-beneficios li:nth-child(1):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(2):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(3):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(4):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(5):before{
+  content: "\f00c";
+}
+ul.lista-beneficios li:nth-child(6):before{
+  content: "\f00c";
+}
+#search-form.callout-region{
+  background-color: #19447b;
+}
+.search-refine-button__text {
+  color: #fff;
+}
+.btn-link, .btn-link:visited, #listings {
+  color: #004270;
+}
+
+.icon.search-refine-button__icon.icon-circle-down {
+  color: #fff;
+}
+.ProductIcon__LargeCircle--course,
+
+.product-tile .product-heading .product-title{text-align: justify;}
+footer.callout-region h3.h2{display: none;}
+
+.product-account-image-wrapper {
+  max-width: 100%;
+}
+.product-description{font-size: 14px!important;}
+.product-tile .product-footer{color:#004270;}
+
+
+h3.icon-objetivo:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/objetivo.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+h3.icon-perfil:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/perfil.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+h2.icon-contenido:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/contenido_tematico.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+h2.icon-profesor:before{
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/profesor.png);
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+
+.bg-amarillo{background: #FDC50A;}
+
+.container-fluid.bg-amarillo.cintillo {
+  position: absolute;
+  background: #19447b ;
+  z-index: 999;
+  height: 50px;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+}
+.container-fluid.bg-amarillo.cintillo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.container-fluid.bg-amarillo.cintillo ul li{
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 0px 10px;
+}
+.container-fluid.bg-amarillo.cintillo ul li a{
+  color: #fff;
+  text-transform: uppercase;
+
+font-family: Font Awesome 6 Free;
+font-size: 12px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+.container-fluid.bg-amarillo.cintillo ul li a {
+  color: #19447b;
+  background: #fdc510;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.container-fluid.bg-amarillo.cintillo .container{
+  max-width:1100px!important;
+  margin: 0 auto;
+
+}
+.container-fluid.bg-azul-footer {
+  background: #004270;
+  padding: 50px 0px;
+  color: #fff;
+}
+.container-fluid.bg-azul-footer h2{
+  font-size: 24px;
+  color: #fff;
+}
+.container-fluid.bg-azul-footer h3{
+  font-size: 17px;
+  color: #fff;
+}
+.tel-footer{
+  font-size: 17px;
+  color: #fff!important;
+  text-decoration: none!important;
+}
+.col-md-12.redes-sociales .redes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 20px 0px;
+}
+.col-md-12.redes-sociales .redes p{color: #fff;}
+.col-md-12.logos-footer ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 20px 0px;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  margin: 0 auto;
+}
+ul.piped-list {
+  display: none;
+}
+footer#app-footer p.small {
+  display: none;
+}
+.product-image .image-container {
+  margin-bottom: 10px;
+  border: solid #004270 2px;
+}
+/* Fichas */
+.product-tile .product-heading {
+  color: #004270;
+  font-family: Lato;
+  font-size: 17px!important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.product-description{
+  color: #666;
+font-family: Lato;
+font-size: 14px!important;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none!important;
+}
+.product-results .product-tile:hover {
+  box-shadow: inset 0px -5px 0px #FDC50A!important;
+}
+a:link{text-decoration: none!important;}
+.redes {
+  max-width: 500px;
+  margin: 0 auto;
+}
+div#description hr {
+  background: #FDC50A;
+  padding-bottom: 5px;
+  border: none;
+  opacity: 1;
+  height: 2px!important;
+}
+div#description h3{
+  color: #004270;
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+/* Slider */
+img {
+  max-width: 100%;
+}
+
+.slider-container {
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  top: 154px; 
+}
+div#search-form {
+  margin-top: 198px;
+}
+.product-dates{display: none;}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.menu label:hover {
+  background: red;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+}
+
+[id^=slide]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+.slide-1 {
+  background-image: url("https://test.adviewhost.com/canvasiteso/images/03.jpg");
+  background-size: cover;
+}
+
+.slide-2 {
+  background-image: url("https://test.adviewhost.com/canvasiteso/images/02.jpg");
+  background-size: cover;
+}
+
+.slide-3 {
+  background-image: url("https://test.adviewhost.com/canvasiteso/images/01.jpg");
+  background-size: cover;
+}
+/* Slider */
+/* Lista interna iconos */
+div#description ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+div#description ol li{
+  font-size: 21px;
+  text-align: center;
+  
+}
+div#description ol li a{
+  color: #0d395f!important;
+  font-weight: 700;
+}
+
+div#description ol li:nth-child(1):before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/duracion.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+div#description ol li:nth-child(2):before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/precio.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+div#description ol li:nth-child(3):before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url(https://test.adviewhost.com/canvasiteso/images/iconos/fecha.png );
+  background-size: cover;
+  display: inline-block;
+  top: 15px;
+  position: relative;
+  z-index: 99999999999;
+left: 0%;
+}
+.container-fluid.bg-amarillo.cintillo ul li a::before {
+  content: '';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f0ac";
+  text-decoration: inherit;
+  color: #19447b;
+  font-size: 15px;
+  position: relative;
+  left: -10px;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+div#checkout-header {
+  margin-top: 50px!important;
+}
+ul.Product__AssociatedProductsList--above-the-fold {
+  list-style: auto;
+  color: #1473ac;
+}
+input#slide-dot-3, input#slide-dot-2, input#slide-dot-1 {
+  z-index: 999999;
+  position: relative;
+  top: 575px;
+  margin: 0px 10px;
+}
+.main-container{
+  width: 100%;
+  max-width: 1200px;
+  margin:  0 auto;
+}
+.header-container{
+  margin: 0 auto;
+width: 465px;
+height: 190px;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+align-content: center;
+justify-content: center;
+align-items: center;
+justify-items: center;
+}
+img.icono-modalidad{
+  width: 150px;
+ 
+}
+img.titulo-modalidad{
+  width: 460px;
+}
+.body-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.contenido-recurso {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 10px;
+ max-width: 342px;
+}
+.contenido-recurso img{width: 130px; height:130px; display: block; margin:  0 auto;}
+.contenido-recurso h3{
+  font-size: 24px;
+  color:#263d8d;
+  text-align: center;
+  font-weight: 700;
+}
+.contenido-recurso p{
+  font-size: 14px;
+  color:#263d8d;
+  text-align: center;
+ 
+
+}
+.autogestivo{margin-top: 400px;}
+.titulo-azul{
+  color: #3598db!important;
+  font-weight: 700;
+}
+@media(max-width:768px){
+  .body-container{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media(max-width:520px){
+  .body-container{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+  }
+  .header-container{
+      margin: 0 auto;
+      width: 465px;
+      height: 190px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+     
+  }
+}
+
+/* MEDIAS */
+@media(max-width:520px){
+  .slider-container {
+    height: 467px;
+  }
+  input#slide-dot-3, input#slide-dot-2, input#slide-dot-1 {
+    top: 444px;
+  }
+  .container-fluid.bg-amarillo.cintillo ul {
+    text-align: center;
+  }
+  div#description ol{grid-template-columns: repeat(1, 1fr);}
+}
 
 #app-header{
     background-color: #86A0C6;
@@ -9,8 +647,8 @@
 }
 
 /* Cambiar el color del botón de inicio de sesión*/
-#user-nav>a{color: white;}
-#user-nav>a:hover{color: white;}
+.css-zi7qzf-view-link:-webkit-any(a), .css-zi7qzf-view-link:-webkit-any(button){color: white;}
+.css-zi7qzf-view-link:-webkit-any(a):focus, .css-zi7qzf-view-link:-webkit-any(button):focus{color: white;}
 
 /* Cambia el color del fondo de la barra de navegación */
 #topnavbar{
@@ -54,4 +692,102 @@ color: #00263D;
 /* Ligas pie de página*/
 #app-footer a, #app-footer ul{
 color: #00253D;
+}
+#app-footer > div.container-fluid.bg-azul-footer > div > div > div:nth-child(4) > a > p{
+color: white;
+}
+[id^=slide]:checked + .slide{
+z-index:0;
+}
+
+
+.css-zi7qzf-view-link {
+    background-color: white;
+    color: white;
+    border: none; /* Opcional: elimina el borde si lo tiene */
+}
+
+.css-zi7qzf-view-link:hover {
+    color: white;
+    border: none;
+}
+.css-zi7qzf-view-link:-webkit-any(a), .css-zi7qzf-view-link:-webkit-any(button){ color: white;
+    border: none;}
+
+button.css-zi7qzf-view-link {
+    color: white !important;
+}
+
+
+h1.css-1x7wuul-view-heading {
+    color: black;
+}
+span.h3 {
+    color: black;
+}
+
+.btn-link{
+color:black !important;
+}
+
+.css-zr9hbt-topNavBarDesktopLayout {
+    z-index: 1 !important;
+}
+
+#header-menu-container > div > span i {
+    margin-left: 5px; /* Espacio entre el texto y el ícono */
+    vertical-align: middle;
+}
+
+
+
+//Personalización botón de Inicio de Sesión y Nombre
+.css-zi7qzf-view-link {
+    background-color: white;
+    color: white;
+    border: none; /* Opcional: elimina el borde si lo tiene */
+}
+
+.css-zi7qzf-view-link:hover {
+    color: white;
+    border: none;
+}
+.css-zi7qzf-view-link:-webkit-any(a), .css-zi7qzf-view-link:-webkit-any(button){ color: white;
+    border: none;}
+
+button.css-zi7qzf-view-link {
+    color: white !important;
+}
+
+
+h1.css-1x7wuul-view-heading {
+    color: black;
+}
+span.h3 {
+    color: black;
+}
+
+.btn-link{
+color:black !important;
+}
+
+.css-zr9hbt-topNavBarDesktopLayout {
+    z-index: 1 !important;
+}
+
+.css-zi7qzf-view-link {
+    background-color: #007bff !important; /* Color de fondo del botón */
+    color: white !important;  /* Color del texto */
+    padding: 10px 20px !important; /* Espaciado interno */
+    border: none !important;  /* Sin borde */
+    border-radius: 5px !important;  /* Bordes redondeados */
+    cursor: pointer !important;  /* Cursor de mano */
+    text-align: center !important;  /* Centrar el texto */
+    font-size: 16px !important;  /* Tamaño de fuente */
+    display: inline-block !important;  /* Mostrar como botón */
+    transition: background-color 0.3s ease !important;  /* Transición suave para hover */
+}
+
+.css-zi7qzf-view-link:hover {
+    background-color: #0056b3 !important;  /* Color de fondo al pasar el ratón */
 }
